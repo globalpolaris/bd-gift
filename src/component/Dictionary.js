@@ -62,7 +62,7 @@ const ReqDictionary = () => {
         </div>
         ) : (
           <>
-            {status && counter > 0 ? (
+            {!status && counter === 0 ? <em>No such word! :(</em> :status && counter > 0 ? (
               <div className="res">
                 <h2>{fetchedData.word}</h2>
                 <em>/ {fetchedData.phonetics[0].text} /</em>
