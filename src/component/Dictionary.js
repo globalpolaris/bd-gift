@@ -3,8 +3,9 @@ import React, { useState, useEffect } from "react";
 const ReqDictionary = () => {
   const [word, setWord] = useState("");
   const [counter, setCounter] = useState(0);
-  const [status, setStatus] = useState(false);
+  const [status, setStatus] = useState(true);
   const [fetchedData, setFetchedData] = useState("");
+  const w = word;
   const lang = "en-US";
   const url =
     "https://api.dictionaryapi.dev/api/v2/entries/" + lang + "/" + word;
@@ -16,12 +17,15 @@ const ReqDictionary = () => {
         const data = await resp.json();
         setFetchedData(data[0]);
         setStatus(true);
+        setCounter(counter + 1);
+        // console.log(status);
+      } else {
+        setStatus(false);
+        // console.log(status);
       }
     } catch (error) {
       console.error(error);
     }
-    setCounter(counter + 1);
-    console.log(counter);
   };
 
   const handleSubmit = (e) => {
@@ -50,16 +54,26 @@ const ReqDictionary = () => {
       </form>
 
       <div className="dictionary">
-        {status ? (
+        {w.toLowerCase() === "zenochka" ? (
           <div className="res">
-            <h2>{fetchedData.word}</h2>
-            <em>/ {fetchedData.phonetics[0].text} /</em>
-            <p>{fetchedData.meanings[0].definitions[0].definition}</p>
-          </div>
-        ) : counter > 0 ? (
-          <em className="res">No such word! :(</em>
+          <h2>Zenochka Uma Zivanka</h2>
+          <em>/ Zenochka, Enok /</em>
+          <p>Born on 1st of July 2002. Graduated from Al-Azhar 3 Kebayoran Baru in 2019. Student of Architecture at Diponogero University, expected to graduate in 2023</p>
+        </div>
         ) : (
-          <>AWAWAW</>
+          <>
+            {status && counter > 0 ? (
+              <div className="res">
+                <h2>{fetchedData.word}</h2>
+                <em>/ {fetchedData.phonetics[0].text} /</em>
+                <p>{fetchedData.meanings[0].definitions[0].definition}</p>
+              </div>
+            ) : counter === 0 ? (
+              <></>
+            ) : (
+              <em>No such word! :(</em>
+            )}
+          </>
         )}
       </div>
     </div>
