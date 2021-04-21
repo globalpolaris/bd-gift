@@ -46,7 +46,6 @@ header > .title {
   user-select: none;
 }
 
-
 .nav {
   display: flex;
 }
@@ -76,8 +75,9 @@ header > .title {
 
 .options .nav li a {
   text-decoration: none;
+  padding: 10px 0;
   color: var(--text-color);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
 }
 
 .options .nav li:nth-child(3) a {
@@ -231,12 +231,92 @@ input:checked + .slider .moon-icon {
   width: 450px;
 }
 
+.contain {
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 12% 0;
+  color: var(--text-color);
+}
+
+.context {
+  width: 400px;
+  margin: 0 25px;
+}
+
+.sorry-img {
+  width: 323px;
+}
+
+.number-box {
+  width: 30px;
+  height: 25px;
+  margin: 15px 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-align: center;
+  border: 1px solid rgb(196, 196, 196);
+}
+
+.gift-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gift-wrap > h1 {
+  /* position: absolute; */
+  /* left: 27%; */
+  margin: 150px 0 -100px 0;
+  color: var(--text-color);
+}
+
+
 @media screen and (max-width: 576px) {
   body {
     overflow: hidden;
   }
 
-  ul  {
+  .gift-wrap > h1 {
+    font-size: 22px;
+    margin-bottom: -16%;
+  }
+  .contain {
+    margin: 25% 0;
+    flex-direction: column;
+  }
+  
+  .context {
+    width: 250px;
+  }
+  
+  .context > h1 {
+    font-size: 22px;
+  }
+
+  .context > h3 {
+    font-size: 14px;
+  }
+
+  .context em {
+    font-size: 14px;
+  }
+
+  .number-box {
+    width: 20px;
+    height: 15px;
+    margin: 10px 0;
+  }
+
+  .sorry-img {
+    width: 124px;
+    height: 114px;
+  }
+
+  ul {
     position: fixed;
     align-items: center;
     right: 0;
@@ -248,7 +328,7 @@ input:checked + .slider .moon-icon {
     flex-direction: column;
     justify-content: space-evenly;
     transform: translateX(100%);
-    transition:  0.5s;
+    transition: 0.5s;
   }
 
   .nav.slide {
@@ -364,7 +444,6 @@ input:checked + .slider .moon-icon {
 }
 
 @media screen and (max-width: 768px) {
-
   .clock {
     margin-top: 25%;
   }
@@ -379,23 +458,7 @@ input:checked + .slider .moon-icon {
   .switch-icon {
     right: 1%;
   }
-}
-@media screen and (min-width: 758px) {
 
-  .clock {
-    margin-top: 25%;
-  }
-  #search {
-    width: 250px;
-    margin: 25px 0;
-  }
-  .res {
-    width: 250px;
-    left: 22%;
-  }
-  .switch-icon {
-    right: 1%;
-  }
 }
 
 @media screen and (min-width: 1024px) {
