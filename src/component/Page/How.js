@@ -21,7 +21,9 @@ const How = () => {
 
   useEffect(() => {
     fetchData();
-    return;
+    return () => {
+      setFetchedData({})
+    };
   }, [number]);
 
   const handleSubmit = (e) => {
