@@ -14,7 +14,7 @@ function App() {
         <Night />
         <Switch>
           <Redirect from="/bd-gift" to="/" />
-          <Route path="/" exact component={Home} />
+          <Route path="/project-z" exact component={Home} />
           <Route path="/how-it-started" component={How} />
           <Route path="/your-gift" component={Gift} />
         </Switch>
