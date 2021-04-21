@@ -5,7 +5,7 @@ const Night = () => {
   const [icon, setIcon] = useState(true);
   const sun = <FontAwesomeIcon icon={faSun} size="1x" />;
   const moon = <FontAwesomeIcon icon={faMoon} size="1x" />;
-  const theme = localStorage.getItem('theme')
+  // const theme = localStorage.getItem('theme')
   // console.log(theme);
   return (
   
@@ -19,14 +19,14 @@ const Night = () => {
         <div className="moon-icon">{icon ? (
         <>  
           {moon}
-          {document.documentElement.setAttribute('data-theme', theme)}
-          {localStorage.setItem('theme', 'dark')}
+          {document.documentElement.setAttribute('data-theme', 'dark')}
+          {/* {localStorage.setItem('theme', 'dark')} */}
         </>
         ) : (
           <>
           {sun}
-          {document.documentElement.setAttribute('data-theme', theme)}
-          {localStorage.setItem('theme', 'light')}
+          {document.documentElement.setAttribute('data-theme', 'light')}
+          {/* {localStorage.setItem('theme', 'light')} */}
         </>
         )}</div>
       </span>
