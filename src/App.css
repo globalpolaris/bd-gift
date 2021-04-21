@@ -178,7 +178,7 @@ section > small {
 .slider {
   position: absolute;
   cursor: pointer;
-  background-color: #949494;
+  background-color: rgba(238, 238, 238, 0.925);
   top: 0;
   left: 0;
   right: 0;
@@ -190,18 +190,19 @@ section > small {
 .slider .moon-icon {
   position: absolute;
   transition: all 0.5s ease-in-out;
-  color: #fdec00;
+
+  color: #5e0599;
   left: 5px;
   top: -1px;
 }
 
 input:checked + .slider {
-  background-color: rgba(238, 238, 238, 0.925);
+  background-color: #949494;
 }
 
 input:checked + .slider .moon-icon {
   transform: translateX(25px);
-  color: #5e0599;
+  color: #fdec00;
 }
 
 .txt-switch {
@@ -274,7 +275,6 @@ input:checked + .slider .moon-icon {
   color: var(--text-color);
 }
 
-
 @media screen and (max-width: 576px) {
   body {
     overflow: hidden;
@@ -288,11 +288,11 @@ input:checked + .slider .moon-icon {
     margin: 25% 0;
     flex-direction: column;
   }
-  
+
   .context {
     width: 250px;
   }
-  
+
   .context > h1 {
     font-size: 22px;
   }
@@ -458,7 +458,6 @@ input:checked + .slider .moon-icon {
   .switch-icon {
     right: 1%;
   }
-
 }
 
 @media screen and (min-width: 1024px) {
