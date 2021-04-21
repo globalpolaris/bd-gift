@@ -178,7 +178,8 @@ section > small {
 .slider {
   position: absolute;
   cursor: pointer;
-  background-color: rgba(238, 238, 238, 0.925);
+  background-color: #949494;
+  
   top: 0;
   left: 0;
   right: 0;
@@ -190,19 +191,19 @@ section > small {
 .slider .moon-icon {
   position: absolute;
   transition: all 0.5s ease-in-out;
-
-  color: #5e0599;
+  color: #fdec00;
+  
   left: 5px;
   top: -1px;
 }
 
 input:checked + .slider {
-  background-color: #949494;
+  background-color: rgba(238, 238, 238, 0.925);
 }
 
 input:checked + .slider .moon-icon {
   transform: translateX(25px);
-  color: #fdec00;
+  color: #5e0599;
 }
 
 .txt-switch {

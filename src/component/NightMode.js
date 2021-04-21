@@ -18,13 +18,13 @@ const Night = () => {
       <span className="slider"  >
         <div className="moon-icon">{icon ? (
         <>  
-          {moon}
+          {sun}
           {document.documentElement.setAttribute('data-theme', 'dark')}
           {/* {localStorage.setItem('theme', 'dark')} */}
         </>
         ) : (
           <>
-          {sun}
+          {moon}
           {document.documentElement.setAttribute('data-theme', 'light')}
           {/* {localStorage.setItem('theme', 'light')} */}
         </>
