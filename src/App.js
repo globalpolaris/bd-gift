@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./component/Header";
 import Night from "./component/NightMode";
 import Home from "./component/Page/Home";
@@ -13,8 +13,7 @@ function App() {
         <Header />
         <Night />
         <Switch>
-          <Redirect from="/bd-gift" to="/" />
-          <Route path="/project-z" component={Home} />
+          <Route path="/" exact component={Home} />
           <Route path="/how-it-started" component={How} />
           <Route path="/your-gift" component={Gift} />
         </Switch>

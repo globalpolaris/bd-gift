@@ -20,7 +20,7 @@ const Header = () => {
         </div>
         <ul className={toggle ? "nav slide" : "nav"}>
             <li>
-              <Link to="/project-z">Home</Link>
+              <Link to="/">Home</Link>
             </li>
           <li>
             <Link to="/how-it-started">How it started</Link>
