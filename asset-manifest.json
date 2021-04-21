@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/home/static/css/main.79720eef.chunk.css",
-    "main.js": "/home/static/js/main.47c2ed2f.chunk.js",
-    "main.js.map": "/home/static/js/main.47c2ed2f.chunk.js.map",
-    "runtime-main.js": "/home/static/js/runtime-main.5261b84d.js",
-    "runtime-main.js.map": "/home/static/js/runtime-main.5261b84d.js.map",
-    "static/js/2.1a4704e1.chunk.js": "/home/static/js/2.1a4704e1.chunk.js",
-    "static/js/2.1a4704e1.chunk.js.map": "/home/static/js/2.1a4704e1.chunk.js.map",
-    "static/js/3.aa4d445c.chunk.js": "/home/static/js/3.aa4d445c.chunk.js",
-    "static/js/3.aa4d445c.chunk.js.map": "/home/static/js/3.aa4d445c.chunk.js.map",
-    "index.html": "/home/index.html",
-    "static/css/main.79720eef.chunk.css.map": "/home/static/css/main.79720eef.chunk.css.map",
-    "static/js/2.1a4704e1.chunk.js.LICENSE.txt": "/home/static/js/2.1a4704e1.chunk.js.LICENSE.txt",
-    "static/media/patient.c04a338e.png": "/home/static/media/patient.c04a338e.png",
-    "static/media/sorry.e9b93c9a.png": "/home/static/media/sorry.e9b93c9a.png"
+    "main.css": "/project-z/static/css/main.79720eef.chunk.css",
+    "main.js": "/project-z/static/js/main.6c21d5f8.chunk.js",
+    "main.js.map": "/project-z/static/js/main.6c21d5f8.chunk.js.map",
+    "runtime-main.js": "/project-z/static/js/runtime-main.6d1768f8.js",
+    "runtime-main.js.map": "/project-z/static/js/runtime-main.6d1768f8.js.map",
+    "static/js/2.1a4704e1.chunk.js": "/project-z/static/js/2.1a4704e1.chunk.js",
+    "static/js/2.1a4704e1.chunk.js.map": "/project-z/static/js/2.1a4704e1.chunk.js.map",
+    "static/js/3.aa4d445c.chunk.js": "/project-z/static/js/3.aa4d445c.chunk.js",
+    "static/js/3.aa4d445c.chunk.js.map": "/project-z/static/js/3.aa4d445c.chunk.js.map",
+    "index.html": "/project-z/index.html",
+    "static/css/main.79720eef.chunk.css.map": "/project-z/static/css/main.79720eef.chunk.css.map",
+    "static/js/2.1a4704e1.chunk.js.LICENSE.txt": "/project-z/static/js/2.1a4704e1.chunk.js.LICENSE.txt",
+    "static/media/patient.c04a338e.png": "/project-z/static/media/patient.c04a338e.png",
+    "static/media/sorry.e9b93c9a.png": "/project-z/static/media/sorry.e9b93c9a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.5261b84d.js",
+    "static/js/runtime-main.6d1768f8.js",
     "static/js/2.1a4704e1.chunk.js",
     "static/css/main.79720eef.chunk.css",
-    "static/js/main.47c2ed2f.chunk.js"
+    "static/js/main.6c21d5f8.chunk.js"
   ]
 }
