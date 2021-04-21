@@ -17,10 +17,6 @@ function App() {
           <Route path="/how-it-started" component={How} />
           <Route path="/your-gift" component={Gift} />
         </Switch>
-        {/* <Night />
-        <Timer />
-        <TestApi />
-        <ReqDictionary /> */}
       </div>
     </Router>
   );

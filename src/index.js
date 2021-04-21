@@ -6,11 +6,12 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <Router basename={process.env.PUBLIC_URL}>
       <App />
     </Router>
-  </React.StrictMode>,
+  // </React.StrictMode>,
+  ,
   document.getElementById("root")
 );
 
